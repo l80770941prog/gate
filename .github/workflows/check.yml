@@ -1,6 +1,9 @@
 name: VPN Gate Node Check
 
 on:
+  # 定时检测: 默认每天 0 点（午夜）跑一次
+  schedule:
+    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 permissions:
